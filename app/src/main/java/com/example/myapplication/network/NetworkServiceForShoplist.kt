@@ -19,13 +19,13 @@ interface NetworkServiceForShoplist {
     ): Call<GetShopDetails>
 
     companion object {
-        fun getService(): NetworkService {
+        fun getService(): NetworkServiceForShoplist {
             val retrofit = Retrofit.Builder()
                 .baseUrl("http://188.166.228.50:3006/")
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
-            return retrofit.create(NetworkService::class.java)
+            return retrofit.create(NetworkServiceForShoplist::class.java)
         }
     }
 }

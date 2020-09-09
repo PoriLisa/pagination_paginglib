@@ -13,13 +13,13 @@ data class ShopOwners(
     val pincode: Float,
     val city: String,
     val state: String,
-    val bonusPoint: Int,
+    val bonusPoint: Float,
     val outletName: String,
     val outletAddress: String,
     val salesRepId: Int,
     val activeStatus: Int,
     val userOnline: Int,
-    val outstandingAmount: Int
+    val outstandingAmount: Float
 
 )
 

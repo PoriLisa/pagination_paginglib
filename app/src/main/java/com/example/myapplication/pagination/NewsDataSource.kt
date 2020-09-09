@@ -4,6 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.paging.PageKeyedDataSource
 import com.example.myapplication.model.News
 import com.example.myapplication.network.NetworkService
+import com.example.myapplication.network.NetworkServiceForShoplist
 import com.example.myapplication.utill.State
 import io.reactivex.Completable
 import io.reactivex.android.schedulers.AndroidSchedulers
